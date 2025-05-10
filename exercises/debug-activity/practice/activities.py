@@ -37,7 +37,7 @@ class PizzaOrderActivities:
         if charge_amount > 3000:
             activity.logger.info("applying discount")
 
-            charge_amount = -500
+            charge_amount -= 500
 
         if charge_amount < 0:
             error_message = f"invalid charge amount: {charge_amount}"
